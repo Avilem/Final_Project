@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  
+    <link rel="stylesheet" href="app.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair:opsz,wght@5..1200,300&family=Raleway&display=swap" rel="stylesheet">
@@ -15,8 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <h1>Tienda de <span style="color:#037BC0"> Muebles </span></h1>
-    <nav>
+    <h1>Tienda de <span class="palabra"> Muebles </span></h1>
+    <nav class="navegador">
             <a href="#">Inicio</a>
             <a href="#">Tienda</a>
             <a href="#">Blog</a>
@@ -26,79 +26,84 @@
     <div class="hero">
         <p>Hero</p>
     </div>
-    <main>
-        <h2>Nuestros productos</h2>
+    <main class="productos">
+        <h2 id="nuestros">Nuestros productos</h2>
         <div id="fila1">
             <div id="f1c1">
-                Imagen de Producto 1
+                <img src="producto1.jpg" alt="Producto 1">
             </div>
             <div id="f1c2" style="background-color: #037BC0">
-                <h3>Producto 1</h3>
+                <h3 class="quitar">Producto 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur maiores numquam, ipsum earum odio dolore quisquam repellat nostrum architecto odit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, autem.
+                </p>
+                <p class="price">$12,000.00</p>
+                
                 <button class="add">Añadir al carrito</button>
             </div>
         </div>
 
         <div id="fila2">
             <div id="f2c1">
-                Imagen producto 2
-                <div style="background-color: #037BC0">
-                    Info producto 2
-                    <button>Añadir al carrito</button>
+                <img src="producto2.jpg" alt="p2">
+                <div  class="info"  style="background-color: #037BC0">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quaerat itaque quam.</p>
+                    <button class="add">Añadir al carrito</button>
                 </div>
             </div>
             <div id="f2c2">
-                Imagen producto 3
-                <div style="background-color: #037BC0">
-                    Info producto 3
-                    <button>Añadir al carrito</button>
+                <img src="producto3.jpg" alt="p3">
+                <div class="info" style="background-color: #037BC0">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quaerat itaque quam.</p>
+                    <button class="add">Añadir al carrito</button>
                 </div>
             </div>
         </div>
         <div id="fila3">
             <div id="f3c1">
-                Imagen producto 4
-                <div style="background-color: #037BC0">
-                    Info producto 4
-                    <button>Añadir al carrito</button>
+                <img src="producto4.jpg" alt="p4">
+                <div class="info" style="background-color: #037BC0">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quaerat itaque quam.</p>
+                    <button class="add">Añadir al carrito</button>
                 </div>
             </div>
             <div id="f3c2">
-                Imagen producto 5
-                <div style="background-color: #037BC0">
-                    Info producto 5
-                    <button>Añadir al carrito</button>
+                <img src="producto5.jpg" alt="p5">
+                <div class="info" style="background-color: #037BC0">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quaerat itaque quam.</p>
+                    <button class="add">Añadir al carrito</button>
                 </div>
             </div>
             <div id="f3c3">
-                Imagen producto 6
-                <div style="background-color: #037BC0">
-                    Info producto 6
-                    <button>Añadir al carrito</button>
+                <img src="producto6.jpg" alt="p6">
+                <div class="info" style="background-color: #037BC0">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quaerat itaque quam.</p>
+                    <button class="add">Añadir al carrito</button>
                 </div>
             </div>
         </div>
 
     <div id="categorias">
-        <h2>Categorías</h2>
+        <h2 class="cate">Categorías de Productos</h2>
         <div id="catfila1">
             <div id="catf1c1">
-                Imagen
+                <img src="categoria1.jpg" alt="c1">
                 <a href="#">Oficina</a>
             </div>
             <div id="catf1c2">
-                imagen
+                <img src="categoria2.jpg" alt="c2">
                 <a href="#">Hogar</a>
             </div>
             <div id="catf1c3">
-                imagen
+                <img src="categoria3.jpg" alt="c3">
                 <a href="#">Cocina</a>
             </div>
         </div>
     </div>
 
     <div id="footer">
-        <div id="foot1c1">
-        <h3>Categorías</h3>
+        <div id="footc1">
+        <h3 class="textos">Categorías</h3>
         <nav>
             <ul>
                 <li><a href="#">Cocina</a></li>
@@ -109,8 +114,8 @@
             </ul>
         </nav>
         </div>
-        <div id="foot1c2">
-            <h3>Sobre nosotros</h3>
+        <div id="footc2">
+            <h3 class="textos">Sobre nosotros</h3>
             <nav>
                 <ul>
                     <li><a href="#">Nuestra historia</a></li>
@@ -121,8 +126,8 @@
                 </ul>
             </nav>
         </div>
-        <div id="foot1c3">
-            <h3>Soporte</h3>
+        <div id="footc3">
+            <h3 class="textos">Soporte</h3>
             <nav>
                 <ul>
                     <li><a href="#">Preguntas frecuentes</a></li>
